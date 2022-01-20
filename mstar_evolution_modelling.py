@@ -1,6 +1,10 @@
-"""Implemented by: Sinan Deger || Date: 10 January 2022"""
+"""
+Author: Sinan Deger || Date: 15 January 2022
+
+code origin: https://github.com/sinandeger/modelling-stellar-mass-evolution-of-galaxies.git
+"""
 import os
-"""Fundamental python libraries"""
+"""Base python libraries"""
 import re
 import pandas as pd
 import numpy as np
@@ -32,7 +36,7 @@ def sfr_mstar_relation(z, mstar):
     beta_z = 0.38 + 1.14*z - 0.19*np.power(z, 2)   # eq. (3)
 
     log_sfr = alpha_z*(np.log10(mstar) - 10.5) + beta_z   # eq. (1)
-    """Convert logarithm of SFR into SFR per year"""
+    """Convert logarithm of SFR into SFR per year and return"""
     return np.power(10, log_sfr)
 
 
@@ -61,7 +65,7 @@ def bc03_mstar_loss(redshift_upper_limit, redshift_lower_limit, bc03_df):
     """
     This function returns the expected stellar mass loss of a galaxy based on the evolution of BC03 simple stellar population (SSP) models
 
-    This tool has been replaced by the mass loss mechanism described in poggianti_mass_loss in the current iteration.
+    This tool has been replaced by the mass loss mechanism described in poggianti_mass_loss in the current installation.
 
     """
 
