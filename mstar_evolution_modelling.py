@@ -14,7 +14,23 @@ from matplotlib.pyplot import cm
 from astropy.cosmology import FlatLambdaCDM
 
 
-"""This module charts the redshift evolution of of given """
+"""
+
+This module charts the stellar mass evolution of galaxies employing observational constraints & mass loss models. It starts
+this evolutionary sequence at a given redshift and for seed galaxies of a given stellar mass. The mass evolution then
+occurs via star formation periods at given redshift intervals, followed by mass loss applied to the stellar populations produced.
+The code tracks the stellar mass loss of these populations for each epoch after their production, and their contribution to the 
+overall stellar mass of the galaxy.
+ 
+Although the functions describing the star formation rate (SFR) and stellar mass mechanism is modular and hence can be modified easily,
+the code employs the following by default:
+ 
+i) The star formation of the galaxies tracked are determined relative to the star formation main sequence (SF-MS), as defined by Whitaker et al 2010.
+Originally, the code only allowed for the star formation rate to be at the SF-MS value. The code currently allows for SFR's 0.3 dex below the SF-MS.
+
+ii) The stellar mass loss relation from Poggianti et al. 2013.
+
+"""
 
 """Define the governing cosmology background here"""
 cosmo = FlatLambdaCDM(H0=70, Om0=0.3)
