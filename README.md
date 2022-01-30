@@ -1,4 +1,4 @@
-# modelling-stellar-mass-evolution-of-galaxies
+# Modelling the Stellar Mass Evolution of Galaxies
 
 This module charts the stellar mass evolution of galaxies employing observational constraints & mass loss models. It starts
 this evolutionary sequence at a given redshift and for seed galaxies of a given stellar mass. The mass evolution then
