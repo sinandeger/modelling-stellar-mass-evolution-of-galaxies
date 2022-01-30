@@ -10,4 +10,4 @@ Below is the figure the module outputs for 6 galaxies, with seed masses ranging 
 <br/><img src='sfr_mstar_evolution.png'>
 
 
-This module is not intended as a exhaustive and complete modeling of stellar mass evolution of galaxies, yet it serves as a versatile tool that produces a realistic approximation. Some features that are intended to be added soon include a intrinsic quenching mechanism that shuts of the star formation of seed galaxies based on observational constraints, and the addition of more flexible star formation history mechanics.
+This module is not intended as an exhaustive modeling of the stellar mass evolution of galaxies, yet it serves as a versatile tool that produces a realistic approximation. Some features that are intended to be added soon include an intrinsic quenching mechanism that shuts of the star formation of seed galaxies based on observational constraints, and the addition of more flexible star formation history mechanics.
